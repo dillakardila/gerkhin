@@ -19,8 +19,13 @@ Feature : Stream page
 	Then user should see information profile user
 
 	Scenario : Click detail trending stocks
-	When user click on stocks in treding stocks
+	When user click on stocks in trending stocks
 	Then user should see information detail stocks
+
+	Scenario : Buy trending stocks
+	When user click on stock in trending stocks
+	And user click button Buy
+	Then user will see information buying page stocks
 
 	Scenario : Write post in timeline
 	When user create post 
